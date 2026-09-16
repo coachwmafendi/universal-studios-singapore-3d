@@ -31,3 +31,6 @@ dist/
 build/
 *.log
 *.tmp
+
+# Cloudflare Wrangler local state
+.wrangler/
