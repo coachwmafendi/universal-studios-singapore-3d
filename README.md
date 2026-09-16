@@ -7,6 +7,8 @@ with Three.js. It exists to answer the questions you actually have before a park
 Seven themed zones, eighteen attractions, the real ring-shaped walking loop around the
 lagoon, and a saved itinerary that totals your walking and queueing time.
 
+**Live: [uss-3d.pages.dev](https://uss-3d.pages.dev)**
+
 ---
 
 ## Setup
@@ -43,6 +45,18 @@ Node users can use `npx serve .` or `npx http-server -p 8080` instead.
   display fonts from Google Fonts. Everything else (every texture, every building) is
   generated in the browser, so there are no image files to download or ship.
 - No build step, no `npm install`, no dependencies directory. One file, 159 KB.
+
+### Deploying
+
+The site is a single static file, so any static host works. It is deployed to Cloudflare
+Pages as the project `uss-3d`:
+
+```bash
+mkdir -p dist && cp index.html dist/ && npx wrangler pages deploy ./dist --project-name uss-3d --branch main
+```
+
+`dist/` is gitignored — it is just a staging folder so the deploy uploads `index.html`
+alone rather than the README, licence and git metadata.
 
 ---
 
