@@ -168,3 +168,13 @@ Everything lives in `index.html`. No assets, no bundler.
 The scene is roughly 500 draw calls and 520 k triangles with two shadow maps, which is
 comfortable on integrated graphics. If it feels heavy on an older machine, turning off the
 miniature blur (`M`) removes the post-processing pass.
+
+---
+
+## License
+
+MIT — see [LICENSE](LICENSE).
+
+Not affiliated with, endorsed by, or connected to Universal Studios, NBCUniversal, or
+Resorts World Sentosa. Attraction and zone names are used descriptively to identify real
+places for trip planning; all trademarks belong to their respective owners.
